@@ -52,7 +52,6 @@ def _onclick(event):
         fig.canvas.draw()
 
 # ------------------------------------------------------------------
-
 fig = plt.figure()
 ax = fig.add_subplot(111)
 ax.set_xlim(-10, 10)
@@ -65,7 +64,7 @@ cid2 = fig.canvas.mpl_connect('key_press_event', _onkeypress)
 cid2 = fig.canvas.mpl_connect('key_release_event', _onkeyrelease)
 
 # pass an instance of the classifier
-# must implement fit and predict methods
+# must implement fit and predict method
 def plot_decision_region(clf):
     global _clf
     _clf = clf
