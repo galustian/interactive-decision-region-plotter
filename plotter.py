@@ -38,8 +38,8 @@ def _onclick(event):
     plt.scatter(_datapoints_arr[:, 0], _datapoints_arr[:, 1], c=_datapoints_arr[:, 2], cmap=_cmap)
     fig.canvas.draw()
 
-    x_range = np.linspace(_datapoints_arr[:, 0].min(), _datapoints_arr[:, 0].max(), 150)
-    y_range = np.linspace(_datapoints_arr[:, 1].min(), _datapoints_arr[:, 1].max(), 150)
+    x_range = np.linspace(_datapoints_arr[:, 0].min(), _datapoints_arr[:, 0].max(), 50)
+    y_range = np.linspace(_datapoints_arr[:, 1].min(), _datapoints_arr[:, 1].max(), 50)
     xx, yy = np.meshgrid(x_range, y_range)
 
     X = _datapoints_arr[:, :2]
